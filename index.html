@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang = "uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Сайт </title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<link rel="icon" href="multimedia/favicon.ico" type="image/x-icon">
+<style>
+      * {
+         margin: 0;
+         box-sizing: border-box;
+      }
+
+      body {
+         background: #39383F;
+         font-family: 'Montserrat Alternates', sans-serif;
+      }
+
+      .top-panel a {
+         color: #F09EA3;
+      }
+
+      header h2,
+      nav a {
+         color: #F5E2CD;
+      }
+
+      nav a:before,
+      nav a:after {
+         color: rgba(255, 255, 255, .3);
+      }
+
+      .post-wrap {
+         max-width: 1120px;
+         margin: 0 auto;
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+      }
+
+      .post-item {
+         padding: 15px;
+         cursor: pointer;
+      }
+
+      .post-item * {
+         transition: .3s linear;
+      }
+
+      .item-content {
+         background: #413D4C;
+         padding: 40px;
+      }
+
+      .item-icon {
+         margin-bottom: 20px;
+      }
+
+      .item-icon:before {
+         content: "";
+         font-family: FontAwesome;
+         color: #F09EA3;
+         font-size: 50px;
+         line-height: 1;
+      }
+
+      .item-icon.photo:before {
+         content: "\f030";
+      }
+
+      .item-icon.video:before {
+         content: "\f03d";
+      }
+
+      .item-icon.gift:before {
+         content: "\f06b";
+      }
+
+      .item-icon.group:before {
+         content: "\f0c0";
+      }
+
+      .item-icon.tree:before {
+         content: "\f1bb";
+      }
+
+      .item-icon.anchor:before {
+         content: "\f13d";
+      }
+
+      .post-item:hover .item-icon,
+      .post-item:hover .item-body h3,
+      .post-item:hover .item-body p {
+         transform: translateY(-8px);
+      }
+
+      .item-body {
+         color: #F5E2CD;
+         font-size: 14px;
+      }
+
+      .item-body h3 {
+         font-weight: 500;
+         margin-bottom: 15px;
+         transition-delay: .05s;
+      }
+
+      .item-body p {
+         transition-delay: .1s;
+      }
+
+      .item-footer {
+         padding-top: 15px;
+      }
+
+      .link {
+         text-decoration: none;
+         display: inline-block;
+         overflow: hidden;
+         position: relative;
+         padding-right: 30px;
+         font-size: 12px;
+         text-transform: uppercase;
+         font-weight: 600;
+         color: #F5E2CD;
+      }
+
+      .link:before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         bottom: 0;
+         height: .125rem;
+         margin: auto;
+         background: #F09EA3;
+         transform: scaleX(.2);
+         transform-origin: left center;
+         z-index: 0;
+         transition: .6s cubic-bezier(.6, .01, 0, 1);
+      }
+
+      .link span {
+         display: inline-block;
+         position: relative;
+         transform: translateX(-200%);
+         transition: .6s cubic-bezier(.6, .01, 0, 1);
+      }
+
+      .post-item:hover .link span {
+         transform: translateX(0%);
+      }
+
+      .post-item:hover .link:before {
+         transform-origin: right center;
+      }
+
+      @media (min-width: 768px) {
+         .post-item {
+            flex-basis: 50%;
+            flex-shrink: 0;
+         }
+      }
+
+      @media (min-width: 960px) {
+         .post-item {
+            flex-basis: 33.333333333%;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <div class="top-panel"><h1><a>Відпочинок</a></h1></div>
+   <div class="container">
+      <header>
+        <div class="my">
+        <img src="https://images.squarespace-cdn.com/content/v1/5cad5d6c11f784544e96dccd/1579973769934-LPKJ5K8P44N52F9UTJLH/Cultured+Forest+LOGO-BLK.png" class="logo">
+        </div>
+         <h2>Оберіть потрібну Вам послугу</h2>
+         <nav>
+            <a href="index1.html">Масові заходи</a>
+            <a href="index2.html">Відпочинок в лісі</a>
+            <a href="index3.html">Поїздка на катері</a>
+            <a href="index4.html">Відеозйомка</a>
+            <a href="index5.html">Фотосесія</a>
+            <a href="index6.html">Організація подарунка</a>
+         </nav>
+      </header>
+      <div class="post-wrap">
+         <div class="post-item">
+            <div class="item-content">
+               <div class="item-icon group"></div>
+               <div class="item-body">
+                  <h3>Масові заходи</h3>
+                  <p>Наша компанія організує будь-який масовий захід за Вашою тематикою.</p>
+               </div>
+               <div class="item-footer">
+                  <a href="index1.html" class="link"><span>Детальніше</span></a>
+               </div>
+            </div>
+         </div>
+         <div class="post-item">
+            <div class="item-content">
+               <div class="item-icon tree"></div>
+               <div class="item-body">
+                  <h3>Відпочинок в лісі</h3>
+                  <p>Наша компанія організує для Вас похід на природу.</p>
+               </div>
+               <div class="item-footer">
+                  <a href="index2.html" class="link"><span>Детальніше</span></a>
+               </div>
+            </div>
+         </div>
+         <div class="post-item">
+            <div class="item-content">
+               <div class="item-icon anchor"></div>
+               <div class="item-body">
+                  <h3>Поїздка на катері</h3>
+                  <p>Наша компанія організує прогулянку на катері особисто для Вас.</p>
+               </div>
+               <div class="item-footer">
+                  <a href="index3.html" class="link"><span>Детальніше</span></a>
+               </div>
+            </div>
+         </div>
+         <div class="post-item">
+            <div class="item-content">
+               <div class="item-icon video"></div>
+               <div class="item-body">
+                  <h3>Відеозйомка</h3>
+                  <p>Наша компанія організує для Вас зйомку будь-якого відео.</p>
+               </div>
+               <div class="item-footer">
+                  <a href="index4.html" class="link"><span>Детальніше</span></a>
+               </div>
+            </div>
+         </div>
+         <div class="post-item">
+            <div class="item-content">
+               <div class="item-icon photo"></div>
+               <div class="item-body">
+                  <h3>Фотосесія</h3>
+                  <p>Наша компанія організує для Вас фотосесію.</p>
+               </div>
+               <div class="item-footer">
+                  <a href="index5.html" class="link"><span>Детальніше</span></a>
+               </div>
+            </div>
+         </div>
+         <div class="post-item">
+            <div class="item-content">
+               <div class="item-icon gift"></div>
+               <div class="item-body">
+                  <h3>Організація подарунка</h3>
+                  <p>Наша компанія організує та креативно вручить подарунок.</p>
+               </div>
+               <div class="item-footer">
+                  <a href="index6.html" class="link"><span>Детальніше</span></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+<footer>
+<p>Соцмережі</p>
+    <a href="https://facebook.com" class="fa fa-facebook"></a>
+    <a href="https://twitter.com" class="fa fa-twitter"></a>
+    <a href="https://google.com" class="fa fa-google"></a>
+    <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com" class="fa fa-youtube"></a>
+    <a href="https://instagram.com" class="fa fa-instagram"></a>
+    <a href="https://pinterest.com" class="fa fa-pinterest"></a>
+    <a href="https://skype.com" class="fa fa-skype"></a>
+    <p>Наш телефон: +123-456-78-90</p>
+</footer>
+</body>
+</html>
